@@ -1,0 +1,82 @@
+/* Import a Google Font for elegant typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Container styling with a glassmorphic effect */
+.schedule-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elegant title with spacing and subtle drop-shadow */
+.schedule-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid layout with responsive behavior */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+}
+
+/* Card design with hover effect and transitions */
+.schedule-card {
+  background: linear-gradient(145deg, #3b82f6, #2563eb);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schedule-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Court name styling with subtle emoji */
+.court-name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Time display with a secondary look */
+.booking-time {
+  font-size: 18px;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+/* Booked by field with an italic feel */
+.booked-by {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.7;
+}
